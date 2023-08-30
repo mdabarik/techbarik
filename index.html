@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" id="html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/techbarik-logo-96.png" type="image/x-icon">
+    <title>TechBarik</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="bg-base-200">
+        <!--  -->
+        <nav class="container mx-auto">
+            <div class="navbar bg-base-200 text-base-content">
+                <div class="navbar-start">
+                    <!-- Mobile Screen Navigation -->
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Courses</a></li>
+                            <li><a>Practice</a></li>
+                        </ul>
+                    </div> <!-- Mobile Screen Navigation -->
+                    <a class="text-xl">Tech<span class="text-sky-700">Barik</span></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Courses</a></li>
+                        <li><a>Practice</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end" onclick="toogleDataTheme()">
+                    Dark/Light
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- banner section -->
+        <section class=" bg-sky-100 py-8">
+            <div class="container mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <!-- left part -->
+                    <div class="flex-1 w-[80%] lg:w-full flex flex-col items-center md:items-start">
+                        <h1 class="text-2xl md:text-3xl lg:text-5xl" id="typewriter">Welcome to TechBarik</h1>
+                        <p class="font-thin my-4 text-3xl text-center md:text-left">A better way to prepare for <br> coding interviews</p>
+                        <button class="btn bg-sky-500 normal-case text-white hover:bg-sky-600">Enroll Courses</button>
+                    </div>
+                    <!-- right part -->
+                    <div class="flex-1 flex justify-center">
+                        <img class="rounded-3xl m-8 p-2 w-[80%]" src="./images/banner-photo-1.jpg" alt="banner">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center py-10 bg-base-200">
+        <p>
+            Allright Reserved &copy; TechBarik
+        </p>
+    </footer>
+
+    <script src="./scripts/typewriter.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
