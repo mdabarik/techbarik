@@ -9,6 +9,4 @@ const toogleDataTheme = () => {
     } else {
         element.setAttribute("data-theme", "light");
     }
-    
-    
 }
